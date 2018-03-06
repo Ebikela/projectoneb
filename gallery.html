@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Gallery</title><!-- title of webpage -->
+<meta charset="utf-8">
+  <link rel="stylesheet" href="./reset.css"/>
+  <link rel="stylesheet" type="text/css" href="./style.css"> <!--html linked to css -->
+<link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <script lang="javascript" type="text/javascript" src="./script.js"> </script><!-- linking to javascript -->
+  <header><!--banner section of the page -->
+    <div class="bannerdiv"><img src="https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/sites/default/files/img_stickman_animation.jpg"  height="200" width="250"><h1 style="color:gold;"> T</h1><h1>he P</h1><h1 style="color:gold;">ea</h1>k  Phot<h1 style="color:gold;">os</h1></div>
+<nav>
+  <button class="button"><a href="index.html">Home</a></button>
+  <button class="button button2"><a href="gallery.html">Gallery</a></button>
+</nav>
+</header>
+<!-- main section -->
+<div class="main">
+<section class="slidersection"><!--this section of main holds slider images-->
+    <div class="container1">
+      <input type="radio" name="images" id="i1" checked><!-- insact radio button to control images, button one is checked  -->
+      <input type="radio" name="images" id="i2">
+      <input type="radio" name="images" id="i3">
+
+      <div class="container_img" id="one">
+        <img src="http://woman.ng/wp-content/uploads/2014/08/oshewabeauty-3-1024x614.jpg" alt="one">
+        <label for="i3" class="pre"></label>
+        <label for="i2" class="nxt"></label>
+      </div>
+      <div class="container_img" id="two">
+        <img src="http://buzznigeria.com/wp-content/uploads/2015/11/cover-page.jpg" alt="two">
+        <label for="i1" class="pre"></label>
+        <label for="i3" class="nxt"></label>
+      </div>
+      <div class="container_img" id="three">
+        <img src="https://www.goodfreephotos.com/albums/people/beautiful-bride-with-white-wedding-dress.jpg" alt="three">
+        <label for="i2" class="pre"></label>
+        <label for="i1" class="nxt"></label>
+      </div>
+      <div class="nav"> <!-- image can be slided either with button or the nav, both radio and dots are linked in css -->
+        <label class="dots" id="dot1" for="i1" ></label>
+          <label class="dots" id="dot2" for="i2" ></label>
+            <label class="dots" id="dot3" for="i3" ></label>
+      </div>
+    </div>
+    </section><!--slider images section ends here-->
+
+    <section><br><br><br><br><br><br>
+<!-- my fleximg keeps going under container_img, hence am using br tag to bring it under -->
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="fleximg">
+          <div > <img src="http://msc-progress.com/wp-content/uploads/2015/05/dengi-na-svadbu.jpg" alt="1" width="400" height="400"> </div>
+          <div > <img src="http://baliweddingpicture.com/wp-content/flagallery/pre-wedding-photo-in-bali-of-wallace-and-monie/wallace-monie-edited_004.jpg" alt="2" width="400" height="350"> </div>
+          <div > <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Greek_Orthodox_wedding_in_Tripodes%2C_Naxos%2C_119212.JPG" alt="3" width="450" height="350"> </div>
+          <div > <img src="https://media.defense.gov/2010/May/16/2000362680/780/780/0/100514-F-2907C-618.JPG" alt="4" width="460" height="450"> </div>
+          <div > <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Bella_swan_wedding_dress_by_becca678_Cropped.jpg" alt="5" width="450" height="500"> </div>
+          <div > <img src="https://ae01.alicdn.com/kf/HTB1XWREKFXXXXXsXVXXq6xXFXXX0/New-Style-WD012-Fashion-Satin-Sexy-Backless-Mermaid-Wedding-Dress-Long-Sleeves.jpg_640x640.jpg" alt="6" width="440" height="500"> </div>
+        </div>
+
+
+
+        <footer>
+                 &copy; The Peak Photos &nbsp; <span class="seperator">|</span> Designed by Ebikela Ogegbene-Ise.2018
+         </footer>
+    </section>
+
+    </div>
+
+</body><!-- end of body tag -->
+
+
+ </html>

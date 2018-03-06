@@ -1,0 +1,294 @@
+
+html{
+
+font-family: 'Saira Condensed', sans-serif;
+}
+body{
+  height: auto;
+}
+
+.bannerdiv{
+/* position: relative; */
+  color:  white;
+  height: 150px;
+  font-size: 100px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 300px;
+  /* border-bottom: 10px solid pink; */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0wDArL7x_Yjkd5QWCQEdpMuqpzZJr02e2trlWici_o6kpPOilA');
+  /* background-color: teal; */
+  display: flex;
+  justify-content: left;
+}
+.bannerdiv img{
+  /* border-radius: 200px; */
+  border-radius: 22px 70px 18px
+}
+.button {
+    background-color: gold;
+    border: none;
+        padding: 15px 32px;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button a{  text-decoration: none;
+font-weight: bold;
+color: white;
+}
+.button:hover{
+  background-color:  #333333;
+}
+.button a:hover{
+  /* background-color: grey; */
+color:white;
+}
+nav{
+  /* width: 100%; */
+  display: flex;
+justify-content: flex-end;
+padding-right: 200px;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfbMdvw3WRevQ0qaRu5zjCdqJ--ty-we6V1VLD4cSmYFGMGbf');
+
+/* background-color: teal; */
+}
+/* .button a:hover{
+  color: darkgrey;
+} */
+nav > .button2{
+  background-color:  grey;
+}
+nav > .button5{
+  background-color: grey;
+}
+
+
+/* img {
+    border-radius: 10px;
+    max-width: 100%;
+} */
+.main{
+  height: 500px;
+  background: url('https://images.pexels.com/photos/256737/pexels-photo-256737.jpeg?w=940&h=650&auto=compress&cs=tinysr');
+  background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     animation: solid 30s infinite;
+}
+@keyframes solid{
+  25%{
+    background: url('https://ritzcarlton-h.assetsadobe.com/is/image/content/dam/the-ritz-carlton/hotels/mexico-caribbean-and-latin-america/aruba/aruba/weddings/supporting-images/RCARUBA_00070_conversion.png?$XlargeViewport100pct$')
+  }
+  50%{
+background: url('http://styleetcetera.net/wp-content/uploads/2014/12/Wynn-wedding-salon.jpg');
+}
+75%{
+background: url('https://fiercemarriage.com/files/3-ps-poison-marriage-fierce.jpg');
+}
+
+100%{
+  background: url('https://blog-bv-assets.beenverified.com/uploads/2017/08/Wedding-Crashers-8-11-17.jpg')
+}
+  /* end of keyframes .main */
+}
+
+.main #kip  {
+    /* height: 80px; */
+    position: absolute;
+    bottom: 40%;
+    margin-left: 20%;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 60%;
+    padding: 10px;
+    display: center;
+    justify-content: center;
+     text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+#kip h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+   footer {
+height: 80px;
+     /* position: absolute; */
+font-weight: bold;
+color: white;
+font-size: 20px;
+     text-align: center;
+        /* border: 2px solid purple; */
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfbMdvw3WRevQ0qaRu5zjCdqJ--ty-we6V1VLD4cSmYFGMGbf');   }
+   footer a {
+   /* .seperator {
+       color: gold;
+   } */
+}
+footer > section{
+  /* padding-top: 20px;
+  display: flex;
+  justify-content: space-around; */
+  display: flex;
+    justify-content: space-around;
+    /* margin: 0 auto; */
+    padding-top: 50px;
+}
+/* ---------------------Gallery page design------------------------------- */
+.slidersection{
+  background-color: Black;
+      width: 100%;
+}
+.container1{
+background-color: grey;
+  width: 800px;
+   height: 0;
+
+}
+
+.container_img{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container_img img{
+  width: 100%;
+  height: 100%;
+}
+#i1, #i2, #i3{
+  display: none;
+}
+.pre, .nxt{
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(99, 99, 99, 0.7);
+  z-index: 99;
+  cursor: pointer;
+}
+.pre{
+  left: 0;
+}
+.nxt{
+  right: 0;
+}
+.nav{
+  width: 100%;
+  height: 11px;
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+.dots{
+  top: -5px;
+  width: 22px;
+  height: 25px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+}
+.container_img{
+  z-index: -1;
+}
+#i1:checked ~ #one, #i2:checked ~ #two, #i3:checked ~ #three{
+  z-index: 9;
+}
+#i1:checked ~ .nav #dot1, #i2:checked ~ .nav #dot2, #i3:checked ~ .nav #dot3{
+  background: #fff;
+}
+.fleximg{
+  background-color: Black;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+     grid-auto-rows: minmax(100px, auto);
+}
+
+/* -----contact page design--------------------------- */
+.contactPage-main{
+  background-color: grey;
+  height: 600px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.addresscontainer{
+  padding-top: 20px;
+}
+/* _____________About___________________________________ */
+.aboutMain{
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+}
+.aboutus{
+  padding-top: 80px;
+  padding-left: 200px;
+  width: 800px;
+  height: 500px;
+  font-size: 25px;
+  font-style: cursive;
+  color: white;
+}
+.aboutimg{
+margin-left: 300px;
+margin-right: 80px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.aboutimg h1{
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: cursive;
+  color: white;
+}
+/* ________________________________________________________ */
+
+__
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .container_img {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .fleximg{
+    grid-template-columns:repeat(2, 1fr);
+     grid-auto-rows: minmax(100px, auto);
+  }
+
+}
+
+@media (max-width: 576px) {
+  .container_img{
+    flex: 100%;
+    max-width: 100%;
+  }
+  .fleximg{
+    grid-template-columns:repeat(1, 1fr);
+     grid-auto-rows: minmax(100px, auto);
+  }
+  .aboutMain{
+    display: inline-block;
+  }
+  .bannerdiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .main #kip{
+    margin-top: 200px;
+
+  }
+}
