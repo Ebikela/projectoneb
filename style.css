@@ -50,12 +50,8 @@ nav{
 justify-content: flex-end;
 padding-right: 200px;
 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfbMdvw3WRevQ0qaRu5zjCdqJ--ty-we6V1VLD4cSmYFGMGbf');
-
-/* background-color: teal; */
 }
-/* .button a:hover{
-  color: darkgrey;
-} */
+
 nav > .button2{
   background-color:  grey;
 }
@@ -63,11 +59,6 @@ nav > .button5{
   background-color: grey;
 }
 
-
-/* img {
-    border-radius: 10px;
-    max-width: 100%;
-} */
 .main{
   height: 500px;
   background: url('https://images.pexels.com/photos/256737/pexels-photo-256737.jpeg?w=940&h=650&auto=compress&cs=tinysr');
@@ -77,7 +68,7 @@ nav > .button5{
      position: relative;
      animation: solid 30s infinite;
 }
-@keyframes solid{
+@keyframes solid{ /* this create image animation for the home page background img at dif % */
   25%{
     background: url('https://ritzcarlton-h.assetsadobe.com/is/image/content/dam/the-ritz-carlton/hotels/mexico-caribbean-and-latin-america/aruba/aruba/weddings/supporting-images/RCARUBA_00070_conversion.png?$XlargeViewport100pct$')
   }
@@ -91,7 +82,7 @@ background: url('https://fiercemarriage.com/files/3-ps-poison-marriage-fierce.jp
 100%{
   background: url('https://blog-bv-assets.beenverified.com/uploads/2017/08/Wedding-Crashers-8-11-17.jpg')
 }
-  /* end of keyframes .main */
+
 }
 
 .main #kip  {
@@ -99,7 +90,7 @@ background: url('https://fiercemarriage.com/files/3-ps-poison-marriage-fierce.jp
     position: absolute;
     bottom: 40%;
     margin-left: 20%;
-    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    background: rgba(0, 0, 0, 0.5); /* this creats transparency on slider*/
     color: #f1f1f1;
     width: 60%;
     padding: 10px;
@@ -233,7 +224,7 @@ background-color: grey;
 .aboutus{
   padding-top: 80px;
   padding-left: 200px;
-  width: 800px;
+  width: 1000px;
   height: 500px;
   font-size: 25px;
   font-style: cursive;
@@ -241,7 +232,7 @@ background-color: grey;
 }
 .aboutimg{
 margin-left: 300px;
-margin-right: 80px;
+ margin-right: 150px;
   width: 600px;
   display: flex;
   flex-direction: column;
@@ -256,7 +247,7 @@ margin-right: 80px;
 }
 /* ________________________________________________________ */
 
-__
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
   .container_img {
